@@ -1,0 +1,47 @@
+<RCC>
+    <qresource prefix="/">
+        <file>resources/title.png</file>
+    </qresource>
+	<qresource prefix="/">
+        <file>resources/button_normal.png</file>
+    </qresource>
+	<qresource prefix="/">
+        <file>resources/button_hovered.png</file>
+    </qresource>
+	<qresource prefix="/">
+        <file>resources/button_pressed.png</file>
+    </qresource>
+	<qresource prefix="/">
+        <file>resources/tardis.png</file>
+    </qresource>
+    	<qresource prefix="/">
+        <file>resources/button_hovered_red.png</file>
+    </qresource>
+	<qresource prefix="/">
+        <file>resources/button_pressed_red.png</file>
+    </qresource>
+    	<qresource prefix="/">
+        <file>resources/button_hovered_green.png</file>
+    </qresource>
+	<qresource prefix="/">
+        <file>resources/button_pressed_green.png</file>
+    </qresource>
+    <qresource prefix="/">
+        <file>resources/dropdown.png</file>
+    </qresource>
+        <qresource prefix="/">
+        <file>resources/dropdown_arrow.png</file>
+    </qresource>
+    <qresource prefix="/">
+        <file>resources/line_edit.png</file>
+    </qresource>
+	<qresource prefix="/">
+        <file>resources/tardis_exterior.png</file>
+    </qresource>
+	<qresource prefix="/">
+        <file>resources/arrow_left.png</file>
+    </qresource>
+	<qresource prefix="/fonts">
+        <file>resources/DM-Typeface-Bold.ttf</file>
+    </qresource>
+</RCC>

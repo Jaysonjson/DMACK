@@ -10,6 +10,11 @@
 *.dll
 *.dylib
 
+build/
+.idea/
+cmake-build-debug/
+libs/
+
 # Qt-es
 object_script.*.Release
 object_script.*.Debug

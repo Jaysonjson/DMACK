@@ -1,0 +1,593 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>CreateTardisScreen</class>
+ <widget class="QDialog" name="CreateTardisScreen">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>640</width>
+    <height>629</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>DM: ACK - Create Tardis</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <widget class="QComboBox" name="builderBox">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>160</y>
+     <width>171</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>DM-Typeface</family>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QComboBox {
+    padding: 5px;
+    border-image: url(:/resources/dropdown.png) 0 0 0 0 stretch stretch;
+    color: white;
+}
+QComboBox QAbstractItemView {
+    background: #444;
+    border: 1px solid gray;
+    color: white;
+    selection-background-color: #666;
+    selection-color: white;
+}
+QComboBox::drop-down {
+    border: none;
+    background: transparent;
+}
+QComboBox::down-arrow {
+    border-image: url(:/resources/dropdown_arrow.png) 0 0 0 0 stretch stretch;
+    width: 28px;
+    height: 24px;
+	right: 5px;
+    background-size: cover;
+}</string>
+   </property>
+   <property name="editable">
+    <bool>true</bool>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>16</width>
+     <height>16</height>
+    </size>
+   </property>
+   <item>
+    <property name="text">
+     <string>dalekmod:default</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>dalekmod:no_light</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QPushButton" name="createButton">
+   <property name="geometry">
+    <rect>
+     <x>440</x>
+     <y>580</y>
+     <width>181</width>
+     <height>29</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>DM-Typeface</family>
+     <pointsize>10</pointsize>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+    border: none;
+    border-image: url(:/resources/button_normal.png) 0 0 0 0 stretch stretch;
+    width: 200px;
+    height: 100px;
+	color: #3c3c3c;
+padding-bottom: -4px;
+}
+
+QPushButton:hover {
+    border-image: url(:/resources/button_hovered_green.png) 0 0 0 0 stretch stretch;
+color: black;
+padding-bottom: -4px;
+}
+
+QPushButton:pressed {
+  border-image: url(:/resources/button_pressed_green.png) 0 0 0 0 stretch stretch;
+color: black;
+padding-bottom: -8px;
+}</string>
+   </property>
+   <property name="text">
+    <string>Create</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="idEdit">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>40</y>
+     <width>171</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>DM-Typeface</family>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"> QLineEdit {
+        padding-left: 10px; 
+		padding-top: 4px;
+    border: none;
+    border-image: url(:/resources/line_edit.png) 0 0 0 0 stretch  stretch;
+color:white;
+    }
+    QLineEdit::add {
+        subcontrol-origin: content;
+        subcontrol-position: left center; 
+        width: 20px;
+        height: 20px;
+    border: none;
+    border-image: url(:/resources/line_edit.png) 0 0 0 0 stretch stretch;
+        margin: 5px;
+color:white;
+    }</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="placeholderText">
+    <string>id</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="descriptionEdit">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>120</y>
+     <width>171</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>DM-Typeface</family>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"> QLineEdit {
+        padding-left: 10px; 
+		padding-top: 4px;
+    border: none;
+    border-image: url(:/resources/line_edit.png) 0 0 0 0 stretch  stretch;
+color:white;
+    }
+    QLineEdit::add {
+        subcontrol-origin: content;
+        subcontrol-position: left center; 
+        width: 20px;
+        height: 20px;
+    border: none;
+    border-image: url(:/resources/line_edit.png) 0 0 0 0 stretch stretch;
+        margin: 5px;
+color:white;
+    }</string>
+   </property>
+   <property name="placeholderText">
+    <string>description</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="nameEdit">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>80</y>
+     <width>171</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>DM-Typeface</family>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"> QLineEdit {
+        padding-left: 10px; 
+		padding-top: 4px;
+    border: none;
+    border-image: url(:/resources/line_edit.png) 0 0 0 0 stretch  stretch;
+color:white;
+    }
+    QLineEdit::add {
+        subcontrol-origin: content;
+        subcontrol-position: left center; 
+        width: 20px;
+        height: 20px;
+    border: none;
+    border-image: url(:/resources/line_edit.png) 0 0 0 0 stretch stretch;
+        margin: 5px;
+color:white;
+    }</string>
+   </property>
+   <property name="placeholderText">
+    <string>name</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="modelButton">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>220</y>
+     <width>111</width>
+     <height>29</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>DM-Typeface</family>
+     <pointsize>10</pointsize>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+    border: none;
+    border-image: url(:/resources/button_normal.png) 0 0 0 0 stretch stretch;
+    width: 200px;
+    height: 100px;
+	color: #3c3c3c;
+padding-bottom: -4px;
+}
+
+QPushButton:hover {
+    border-image: url(:/resources/button_hovered.png) 0 0 0 0 stretch stretch;
+color: black;
+padding-bottom: -4px;
+}
+
+QPushButton:pressed {
+  border-image: url(:/resources/button_pressed.png) 0 0 0 0 stretch stretch;
+color: black;
+padding-bottom: -8px;
+}</string>
+   </property>
+   <property name="text">
+    <string>Model</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="animationButton">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>260</y>
+     <width>111</width>
+     <height>29</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>DM-Typeface</family>
+     <pointsize>10</pointsize>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+    border: none;
+    border-image: url(:/resources/button_normal.png) 0 0 0 0 stretch stretch;
+    width: 200px;
+    height: 100px;
+	color: #3c3c3c;
+padding-bottom: -4px;
+}
+
+QPushButton:hover {
+    border-image: url(:/resources/button_hovered.png) 0 0 0 0 stretch stretch;
+color: black;
+padding-bottom: -4px;
+}
+
+QPushButton:pressed {
+  border-image: url(:/resources/button_pressed.png) 0 0 0 0 stretch stretch;
+color: black;
+padding-bottom: -8px;
+}</string>
+   </property>
+   <property name="text">
+    <string>Animation</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="textureButton">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>300</y>
+     <width>111</width>
+     <height>29</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>DM-Typeface</family>
+     <pointsize>10</pointsize>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+    border: none;
+    border-image: url(:/resources/button_normal.png) 0 0 0 0 stretch stretch;
+    width: 200px;
+    height: 100px;
+	color: #3c3c3c;
+padding-bottom: -4px;
+}
+
+QPushButton:hover {
+    border-image: url(:/resources/button_hovered.png) 0 0 0 0 stretch stretch;
+color: black;
+padding-bottom: -4px;
+}
+
+QPushButton:pressed {
+  border-image: url(:/resources/button_pressed.png) 0 0 0 0 stretch stretch;
+color: black;
+padding-bottom: -8px;
+}</string>
+   </property>
+   <property name="text">
+    <string>Texture</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="modelLabel">
+   <property name="geometry">
+    <rect>
+     <x>150</x>
+     <y>220</y>
+     <width>211</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="animationLabel">
+   <property name="geometry">
+    <rect>
+     <x>150</x>
+     <y>260</y>
+     <width>211</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="textureLabel">
+   <property name="geometry">
+    <rect>
+     <x>150</x>
+     <y>300</y>
+     <width>211</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="textureIconLabel">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>350</y>
+     <width>161</width>
+     <height>151</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QScrollArea" name="scrollArea">
+   <property name="geometry">
+    <rect>
+     <x>470</x>
+     <y>30</y>
+     <width>151</width>
+     <height>141</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::NoFrame</enum>
+   </property>
+   <property name="verticalScrollBarPolicy">
+    <enum>Qt::ScrollBarAlwaysOn</enum>
+   </property>
+   <property name="widgetResizable">
+    <bool>true</bool>
+   </property>
+   <widget class="QWidget" name="scrollAreaWidgetContents">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>134</width>
+      <height>900</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>0</width>
+      <height>900</height>
+     </size>
+    </property>
+    <widget class="QWidget" name="verticalLayoutWidget">
+     <property name="geometry">
+      <rect>
+       <x>-1</x>
+       <y>-1</y>
+       <width>111</width>
+       <height>179</height>
+      </rect>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <property name="leftMargin">
+       <number>2</number>
+      </property>
+      <property name="topMargin">
+       <number>5</number>
+      </property>
+     </layout>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QPushButton" name="pushButton">
+   <property name="geometry">
+    <rect>
+     <x>342</x>
+     <y>30</y>
+     <width>111</width>
+     <height>29</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+    border: none;
+    border-image: url(:/resources/button_normal.png) 0 0 0 0 stretch stretch;
+    width: 200px;
+    height: 100px;
+	color: #424242;
+padding-bottom: 2px;
+}
+
+QPushButton:hover {
+    border-image: url(:/resources/button_hovered.png) 0 0 0 0 stretch stretch;
+color: black;
+padding-bottom: 2px;
+}
+
+QPushButton:pressed {
+  border-image: url(:/resources/button_pressed.png) 0 0 0 0 stretch stretch;
+color: black;
+padding-bottom: -6px;
+}</string>
+   </property>
+   <property name="text">
+    <string>Add Layer</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_2">
+   <property name="geometry">
+    <rect>
+     <x>342</x>
+     <y>70</y>
+     <width>111</width>
+     <height>29</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+    border: none;
+    border-image: url(:/resources/button_normal.png) 0 0 0 0 stretch stretch;
+    width: 200px;
+    height: 100px;
+	color: white;
+}
+
+QPushButton:hover {
+    border-image: url(:/resources/button_hovered_red.png) 0 0 0 0 stretch stretch;
+color: black;
+}
+
+QPushButton:pressed {
+  border-image: url(:/resources/button_pressed_red.png) 0 0 0 0 stretch stretch;
+color: black;
+}</string>
+   </property>
+   <property name="text">
+    <string>Remove Layer</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="cancelButton">
+   <property name="geometry">
+    <rect>
+     <x>302</x>
+     <y>580</y>
+     <width>131</width>
+     <height>29</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>DM-Typeface</family>
+     <pointsize>10</pointsize>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+    border: none;
+    border-image: url(:/resources/button_normal.png) 0 0 0 0 stretch stretch;
+    width: 200px;
+    height: 100px;
+	color: #3c3c3c;
+padding-bottom: -4px;
+}
+
+QPushButton:hover {
+    border-image: url(:/resources/button_hovered_red.png) 0 0 0 0 stretch stretch;
+color: black;
+padding-bottom: -4px;
+}
+
+QPushButton:pressed {
+  border-image: url(:/resources/button_pressed_red.png) 0 0 0 0 stretch stretch;
+color: black;
+padding-bottom: -8px;
+}</string>
+   </property>
+   <property name="text">
+    <string>Cancel</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

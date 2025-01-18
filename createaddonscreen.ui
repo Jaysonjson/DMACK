@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>CreateAddonScreen</class>
+ <widget class="QDialog" name="CreateAddonScreen">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>465</width>
+    <height>301</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>DM: ACK - Create Addon</string>
+  </property>
+  <widget class="QLineEdit" name="nameEdit">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>70</y>
+     <width>201</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"> QLineEdit {
+        padding-left: 10px; 
+    border: none;
+    border-image: url(:/resources/line_edit.png) 0 0 0 0 stretch  stretch;
+color:white;
+    }
+    QLineEdit::add {
+        subcontrol-origin: content;
+        subcontrol-position: left center; 
+        width: 20px;
+        height: 20px;
+    border: none;
+    border-image: url(:/resources/line_edit.png) 0 0 0 0 stretch stretch;
+        margin: 5px;
+color:white;
+    }</string>
+   </property>
+   <property name="placeholderText">
+    <string>name</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>250</y>
+     <width>201</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+    border: none;
+    border-image: url(:/resources/button_normal.png) 0 0 0 0 stretch stretch;
+    width: 200px;
+    height: 100px;
+	color: white;
+padding-bottom: 10px;
+}
+
+QPushButton:hover {
+    border-image: url(:/resources/button_hovered_green.png) 0 0 0 0 stretch stretch;
+color: black;
+padding-bottom: 10px;
+}
+
+QPushButton:pressed {
+  border-image: url(:/resources/button_pressed_green.png) 0 0 0 0 stretch stretch;
+color: black;
+padding-bottom: 0px;
+}</string>
+   </property>
+   <property name="text">
+    <string>Create Addon</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="descriptionEdit">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>130</y>
+     <width>201</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"> QLineEdit {
+        padding-left: 10px; 
+    border: none;
+    border-image: url(:/resources/line_edit.png) 0 0 0 0 stretch  stretch;
+color:white;
+    }
+    QLineEdit::add {
+        subcontrol-origin: content;
+        subcontrol-position: left center; 
+        width: 20px;
+        height: 20px;
+    border: none;
+    border-image: url(:/resources/line_edit.png) 0 0 0 0 stretch stretch;
+        margin: 5px;
+color:white;
+    }</string>
+   </property>
+   <property name="placeholderText">
+    <string>description</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="idEdit">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>201</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"> QLineEdit {
+        padding-left: 10px; 
+    border: none;
+    border-image: url(:/resources/line_edit.png) 0 0 0 0 stretch  stretch;
+color:white;
+    }
+    QLineEdit::add {
+        subcontrol-origin: content;
+        subcontrol-position: left center; 
+        width: 20px;
+        height: 20px;
+    border: none;
+    border-image: url(:/resources/line_edit.png) 0 0 0 0 stretch stretch;
+        margin: 5px;
+color:white;
+    }</string>
+   </property>
+   <property name="placeholderText">
+    <string>id</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="authorEdit">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>190</y>
+     <width>201</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"> QLineEdit {
+        padding-left: 10px; 
+    border: none;
+    border-image: url(:/resources/line_edit.png) 0 0 0 0 stretch  stretch;
+color:white;
+    }
+    QLineEdit::add {
+        subcontrol-origin: content;
+        subcontrol-position: left center; 
+        width: 20px;
+        height: 20px;
+    border: none;
+    border-image: url(:/resources/line_edit.png) 0 0 0 0 stretch stretch;
+        margin: 5px;
+color:white;
+    }</string>
+   </property>
+   <property name="placeholderText">
+    <string>authors</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="iconButton">
+   <property name="geometry">
+    <rect>
+     <x>250</x>
+     <y>190</y>
+     <width>191</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+    border: none;
+    border-image: url(:/resources/button_normal.png) 0 0 0 0 stretch stretch;
+    width: 200px;
+    height: 100px;
+	color: white;
+padding-bottom: 10px;
+}
+
+QPushButton:hover {
+    border-image: url(:/resources/button_hovered.png) 0 0 0 0 stretch stretch;
+color: black;
+padding-bottom: 10px;
+}
+
+QPushButton:pressed {
+  border-image: url(:/resources/button_pressed.png) 0 0 0 0 stretch stretch;
+color: black;
+padding-bottom: 0px;
+}</string>
+   </property>
+   <property name="text">
+    <string>Icon</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>270</x>
+     <y>20</y>
+     <width>151</width>
+     <height>151</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

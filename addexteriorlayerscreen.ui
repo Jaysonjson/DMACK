@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>AddExteriorLayerScreen</class>
+ <widget class="QDialog" name="AddExteriorLayerScreen">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>527</width>
+    <height>442</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QComboBox" name="layerCombo">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>80</y>
+     <width>181</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="editable">
+    <bool>true</bool>
+   </property>
+   <item>
+    <property name="text">
+     <string>snow_map</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>light_map</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>cherry_map</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>mossy_map</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>pale_mossy_map</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>sand_map</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>red_sand_map</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>sculk_map</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>mud_map</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QPushButton" name="addButton">
+   <property name="geometry">
+    <rect>
+     <x>430</x>
+     <y>400</y>
+     <width>83</width>
+     <height>29</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Add</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="textureButton">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>160</y>
+     <width>91</width>
+     <height>29</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Texture</string>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="typeCombo">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>120</y>
+     <width>171</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="editable">
+    <bool>false</bool>
+   </property>
+   <item>
+    <property name="text">
+     <string>default</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>emissive</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QLabel" name="textureLabel">
+   <property name="geometry">
+    <rect>
+     <x>140</x>
+     <y>170</y>
+     <width>371</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>TextureLabel</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="textureIconLabel">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>200</y>
+     <width>151</width>
+     <height>151</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>TextLabel</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_2">
+   <property name="geometry">
+    <rect>
+     <x>340</x>
+     <y>400</y>
+     <width>83</width>
+     <height>29</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Cancel</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="feedBackLabel">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>380</y>
+     <width>501</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
