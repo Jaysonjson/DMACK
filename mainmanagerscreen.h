@@ -20,6 +20,8 @@ private slots:
 
     void on_packButton_clicked();
 
+    void on_packButton_2_clicked();
+
 private:
     Ui::MainManagerScreen *ui;
 };

@@ -33,6 +33,7 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
         vars.h vars.cpp
         clickablelabel.h clickablelabel.cpp
         addexteriorlayerscreen.h addexteriorlayerscreen.cpp addexteriorlayerscreen.ui
+        thirdpartyscreen.h thirdpartyscreen.cpp thirdpartyscreen.ui
     )
 endif()
 

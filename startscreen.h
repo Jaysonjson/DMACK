@@ -22,6 +22,10 @@ private slots:
 
     void on_createAddon_clicked();
 
+    void on_thirdButton_clicked();
+
+    void on_exitButton_clicked();
+
 private:
     Ui::StartScreen *ui;
 };

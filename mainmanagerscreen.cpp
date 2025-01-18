@@ -3,6 +3,7 @@
 #include "tardismanagerscreen.h"
 #include <QFileDialog>
 #include "vars.h"
+#include "startscreen.h"
 
 MainManagerScreen::MainManagerScreen(QWidget *parent)
     : QDialog(parent)
@@ -32,5 +33,13 @@ void MainManagerScreen::on_packButton_clicked()
     if (!fileName.isEmpty()) {
         addonPack->pack(fileName.toStdString(), true);
     }
+}
+
+
+void MainManagerScreen::on_packButton_2_clicked()
+{
+    StartScreen* screen = new StartScreen();
+    screen->show();
+    close();
 }
 

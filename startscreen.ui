@@ -118,7 +118,7 @@ padding-bottom: -6px;
     <property name="geometry">
      <rect>
       <x>350</x>
-      <y>420</y>
+      <y>480</y>
       <width>301</width>
       <height>51</height>
      </rect>
@@ -134,22 +134,20 @@ padding-bottom: -6px;
      <string notr="true">QPushButton {
     border: none;
     border-image: url(:/resources/button_normal.png) 0 0 0 0 stretch stretch;
-    width: 200px;
-    height: 100px;
 	color: #3c3c3c;
-padding-bottom: 2px;
+	padding-bottom: 2px;
 }
 
 QPushButton:hover {
     border-image: url(:/resources/button_hovered_red.png) 0 0 0 0 stretch stretch;
-color: black;
-padding-bottom: 2px;
+	padding-bottom: 2px;
+	color: #6e171f;
 }
 
 QPushButton:pressed {
   border-image: url(:/resources/button_pressed_red.png) 0 0 0 0 stretch stretch;
-color: black;
-padding-bottom: -6px;
+	padding-bottom: -6px;
+	color: #6e171f;
 }</string>
     </property>
     <property name="text">
@@ -173,6 +171,48 @@ padding-bottom: -6px;
     </property>
     <property name="scaledContents">
      <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="thirdButton">
+    <property name="geometry">
+     <rect>
+      <x>350</x>
+      <y>420</y>
+      <width>301</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>DM-Typeface</family>
+      <pointsize>16</pointsize>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    border: none;
+    border-image: url(:/resources/button_normal.png) 0 0 0 0 stretch stretch;
+    width: 200px;
+    height: 100px;
+	color: #3c3c3c;
+padding-bottom: 2px;
+}
+
+QPushButton:hover {
+    border-image: url(:/resources/button_hovered.png) 0 0 0 0 stretch stretch;
+color: black;
+padding-bottom: 2px;
+}
+
+QPushButton:pressed {
+  border-image: url(:/resources/button_pressed.png) 0 0 0 0 stretch stretch;
+color: black;
+padding-bottom: -6px;
+}</string>
+    </property>
+    <property name="text">
+     <string>3rd Parties and src</string>
     </property>
    </widget>
   </widget>

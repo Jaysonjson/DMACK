@@ -6,6 +6,7 @@
 #include "createaddonscreen.h"
 #include "vars.h"
 #include <QPropertyAnimation>
+#include "thirdpartyscreen.h"
 
 StartScreen::StartScreen(QWidget *parent)
     : QMainWindow(parent)
@@ -38,5 +39,19 @@ void StartScreen::on_createAddon_clicked()
     CreateAddonScreen* screen = new CreateAddonScreen();
     screen->show();
     this->close();
+}
+
+
+void StartScreen::on_thirdButton_clicked()
+{
+    ThirdPartyScreen* screen = new ThirdPartyScreen();
+    screen->show();
+}
+
+
+void StartScreen::on_exitButton_clicked()
+{
+    delete addonPack;
+    close();
 }
 

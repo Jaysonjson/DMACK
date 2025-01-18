@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>465</width>
-    <height>301</height>
+    <width>461</width>
+    <height>360</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -22,9 +22,17 @@
      <height>51</height>
     </rect>
    </property>
+   <property name="font">
+    <font>
+     <family>DM-Typeface</family>
+     <pointsize>12</pointsize>
+     <bold>true</bold>
+    </font>
+   </property>
    <property name="styleSheet">
     <string notr="true"> QLineEdit {
         padding-left: 10px; 
+		padding-top: 4px;
     border: none;
     border-image: url(:/resources/line_edit.png) 0 0 0 0 stretch  stretch;
 color:white;
@@ -47,32 +55,37 @@ color:white;
   <widget class="QPushButton" name="pushButton">
    <property name="geometry">
     <rect>
-     <x>10</x>
-     <y>250</y>
-     <width>201</width>
-     <height>41</height>
+     <x>70</x>
+     <y>270</y>
+     <width>341</width>
+     <height>71</height>
     </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>DM-Typeface</family>
+     <pointsize>18</pointsize>
+     <bold>true</bold>
+    </font>
    </property>
    <property name="styleSheet">
     <string notr="true">QPushButton {
     border: none;
     border-image: url(:/resources/button_normal.png) 0 0 0 0 stretch stretch;
-    width: 200px;
-    height: 100px;
-	color: white;
-padding-bottom: 10px;
+	color: #3c3c3c;
+	padding-bottom: 2px;
 }
 
 QPushButton:hover {
     border-image: url(:/resources/button_hovered_green.png) 0 0 0 0 stretch stretch;
-color: black;
-padding-bottom: 10px;
+	padding-bottom: 2px;
+	color: #176e34;
 }
 
 QPushButton:pressed {
   border-image: url(:/resources/button_pressed_green.png) 0 0 0 0 stretch stretch;
-color: black;
-padding-bottom: 0px;
+	padding-bottom: -6px;
+	color: #176e34;
 }</string>
    </property>
    <property name="text">
@@ -88,9 +101,17 @@ padding-bottom: 0px;
      <height>51</height>
     </rect>
    </property>
+   <property name="font">
+    <font>
+     <family>DM-Typeface</family>
+     <pointsize>12</pointsize>
+     <bold>true</bold>
+    </font>
+   </property>
    <property name="styleSheet">
     <string notr="true"> QLineEdit {
         padding-left: 10px; 
+		padding-top: 4px;
     border: none;
     border-image: url(:/resources/line_edit.png) 0 0 0 0 stretch  stretch;
 color:white;
@@ -119,9 +140,17 @@ color:white;
      <height>51</height>
     </rect>
    </property>
+   <property name="font">
+    <font>
+     <family>DM-Typeface</family>
+     <pointsize>12</pointsize>
+     <bold>true</bold>
+    </font>
+   </property>
    <property name="styleSheet">
     <string notr="true"> QLineEdit {
         padding-left: 10px; 
+		padding-top: 4px;
     border: none;
     border-image: url(:/resources/line_edit.png) 0 0 0 0 stretch  stretch;
 color:white;
@@ -150,9 +179,17 @@ color:white;
      <height>51</height>
     </rect>
    </property>
+   <property name="font">
+    <font>
+     <family>DM-Typeface</family>
+     <pointsize>12</pointsize>
+     <bold>true</bold>
+    </font>
+   </property>
    <property name="styleSheet">
     <string notr="true"> QLineEdit {
         padding-left: 10px; 
+		padding-top: 4px;
     border: none;
     border-image: url(:/resources/line_edit.png) 0 0 0 0 stretch  stretch;
 color:white;
@@ -181,26 +218,32 @@ color:white;
      <height>41</height>
     </rect>
    </property>
+   <property name="font">
+    <font>
+     <family>DM-Typeface</family>
+     <bold>true</bold>
+    </font>
+   </property>
    <property name="styleSheet">
     <string notr="true">QPushButton {
     border: none;
     border-image: url(:/resources/button_normal.png) 0 0 0 0 stretch stretch;
     width: 200px;
     height: 100px;
-	color: white;
-padding-bottom: 10px;
+	color: #3c3c3c;
+padding-bottom: 2px;
 }
 
 QPushButton:hover {
     border-image: url(:/resources/button_hovered.png) 0 0 0 0 stretch stretch;
 color: black;
-padding-bottom: 10px;
+padding-bottom: 2px;
 }
 
 QPushButton:pressed {
   border-image: url(:/resources/button_pressed.png) 0 0 0 0 stretch stretch;
 color: black;
-padding-bottom: 0px;
+padding-bottom: -6px;
 }</string>
    </property>
    <property name="text">
